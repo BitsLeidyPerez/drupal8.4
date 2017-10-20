@@ -1,0 +1,52 @@
+label{
+    color:#83cc24 ;
+}
+h1 {
+    font-size: 2em;
+    color: #83cc24;
+}
+h2{
+    font-size: 1.5em;
+    color: #83cc24;
+    padding-left: 0.5em;
+}
+h2 a {
+    font-size: 1.5em;
+    color: #83cc24;
+
+}
+h3, h4, h5{
+    color: #0065b5;
+}
+h6{
+    color: #1f1f21;
+    font-style: italic;
+}
+h2 a:hover{
+    text-decoration: none;
+    text-shadow: 0 8px 6px -6px #ccc;
+}
+
+/* se activan con el js del menu primario*/
+.fixed{position:fixed;top:0;width: 100%; z-index: 1000}
+.visible{display: none !important;}
+/*.menu-color{ background-color: #f7f7f7;box-shadow: 0 8px 6px -6px #ccc;}*/
+/* end js del menu primario*/
+
+hr {
+    height: 3px !important;
+}
+.hr-warning{
+    background-image: -webkit-linear-gradient(left, rgba(131,204,36,.8), rgba(131,204,36,.6), rgba(0,0,0,0));
+}
+a{
+    cursor: pointer;
+    color: #0065b5;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    color: #0065b5;
+    text-decoration: none !important;
+    text-shadow: 0 8px 6px -6px #ccc;
+}

@@ -1,0 +1,174 @@
+
+    <header id="header" class="header hm-black-strong" role="banner" aria-label="{{ 'Site header'|t }}">
+      <div class="header-content">
+
+        <nav id="main-menu" class="navbar navbar-expand-lg navbar-light fixed-top bg-faded">
+          <a class="navbar-brand" href="#">{{ page.header }}</a>
+          <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="close">X</span>
+          </button>
+          <div id="navbarNavDropdown" class="navbar-collapse collapse flex-row-reverse">
+
+                {{ page.primary_menu }}
+
+                 </div>
+
+              </nav>
+      </div>
+      <div id="slider">
+        {{ page.banner }}
+      </div>
+      <div class="sec-menu">
+        {{ page.secondary_menu }}
+      </div>
+    </header>
+
+<!-- Main container-->
+<div class="container-fluid">
+
+      {% if page.highlighted %}
+        <div class="highlighted">
+          <aside class="layout-container section clearfix" role="complementary">
+              {{ page.highlighted }}
+          </aside>
+        </div>
+      {% endif %}
+      {% if page.featured_top %}
+        <div class="featured-top">
+          <aside class="featured-top__inner section layout-container clearfix" role="complementary">
+              {{ page.featured_top }}
+          </aside>
+        </div>
+      {% endif %}
+
+    <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
+      <div id="main" class="layout-main row">
+         <div class="breadcrumb">{{ page.breadcrumb }}</div>
+
+          {% if page.sidebar_first and page.sidebar_second %}
+
+            <div id="sidebar-first" class="column sidebar col-sm-2">
+              <aside class="section" role="complementary">
+                  {{ page.sidebar_first }}
+              </aside>
+            </div>
+
+          <div class="col-sm-8">
+          <main id="content" class="column main-content" >
+              <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+              </section>
+          </main>
+          </div>
+
+            <div id="sidebar-second" class="column sidebar col-sm-2">
+              <aside class="section" role="complementary">
+                  {{ page.sidebar_second }}
+              </aside>
+            </div>
+
+          {% elseif page.sidebar_first  %}
+                  <div id="sidebar-first" class="column sidebar col-sm-2">
+                      <aside class="section" role="complementary">
+                          {{ page.sidebar_first }}
+                      </aside>
+                  </div>
+              <div class="col-sm-10">
+                  <main id="content" class="column main-content" >
+                      <section class="section">
+                          <a id="main-content" tabindex="-1"></a>
+                          {{ page.content }}
+                      </section>
+                  </main>
+              </div>
+              {% elseif page.sidebar_second %}
+          <div class="col-sm-10">
+              <main id="content" class="column main-content" >
+                  <section class="section">
+                      <a id="main-content" tabindex="-1"></a>
+                      {{ page.content }}
+                  </section>
+              </main>
+          </div>
+
+              <div id="sidebar-second" class="column sidebar col-sm-2">
+                  <aside class="section" role="complementary">
+                      {{ page.sidebar_second }}
+                  </aside>
+              </div>
+              {% else %}
+              <div class="col-sm-12">
+                  <main id="content" class="column main-content" >
+                      <section class="section">
+                          <a id="main-content" tabindex="-1"></a>
+                          {{ page.content }}
+                      </section>
+                  </main>
+              </div>
+          {% endif %}
+      </div>
+    </div>
+
+
+</div>
+
+
+        <div class="container-fluid">
+          <div class="row">
+
+            {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+
+              <!--First column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.featured_bottom_first }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Second column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.featured_bottom_second }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Third column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.featured_bottom_third }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+
+            {% endif %}
+          </div>
+        </div>
+
+
+
+
+    <footer class="page-footer center-on-small-only stylish-color-dark">
+      <div class="container-fluid">
+        <div class="row">
+
+          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+
+            <!--First column-->
+            <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_first }}</div>
+            <hr class="w-100 clearfix d-sm-none">
+            <!--Second column-->
+            <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_second }}</div>
+            <hr class="w-100 clearfix d-sm-none">
+            <!--Third column-->
+            <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_third }}</div>
+            <hr class="w-100 clearfix d-sm-none">
+            <!--Fourth column-->
+            <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_fourth }}</div>
+            <hr class="w-100 clearfix d-sm-none">
+
+          {% endif %}
+        </div>
+        </div>
+        <hr>
+
+        <div class="footer-copyright">
+          <div class="container-fluid">
+                @adf-bootstrap4
+                {{ page.footer_fifth }}
+          </div>
+            </div>
+
+
+    </footer>
+
+

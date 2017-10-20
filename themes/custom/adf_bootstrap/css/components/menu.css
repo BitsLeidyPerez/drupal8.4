@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Styles for menus in Adf-Bootstrap.
+ */
+
+#logo-menu h3{
+  float: left;
+  font-size: 1.3em;
+}
+#logo-menu img{
+  float: left;
+}
+#logo-menu{
+  width: 25%;
+}
+.sec-menu .navbar-nav{
+  float: left;
+  flex-direction: row !important;
+}
+
+
+.dropdown-item.active{
+  background-color: transparent !important;
+}
+
+
+
+
+

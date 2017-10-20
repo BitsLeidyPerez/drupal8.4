@@ -1,0 +1,27 @@
+adf_bootstrap.small:
+  label: small
+  mediaQuery: 'all and (min-width: 34em) and (max-width: 47em)'
+  weight: 0
+  multipliers:
+    - 1x
+adf_bootstrap.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em) and (max-width: 61em)'
+  weight: 1
+  multipliers:
+    - 1x
+adf_bootstrap.large:
+  label: large
+  mediaQuery: 'all and (min-width: 62em) and (max-width: 74em)'
+  weight: 2
+  multipliers:
+    - 1x
+adf_bootstrap.extra:
+  label: extra
+  mediaQuery: 'all and (min-width: 75em)'
+  weight: 3
+  multipliers:
+    - 1x
+
+
+

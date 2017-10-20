@@ -1,0 +1,31 @@
+name: Adf_Bits
+type: theme
+description: Tema de Bits Americas que extiende de Adf_bootstrap
+core: 8.x
+# Defines the base theme
+base theme: adf_bootstrap
+# Defines libraries group in which we can add css/js.
+libraries:
+  - adf_bits/base_style
+# Regions
+regions:
+  header: Header
+  main_menu: 'Main menu'
+  nav_menu: 'Nav menu'
+  banner: 'Banner slider'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  nosotros: 'Nosotros'
+  prod_serv: 'Productos y Servicios'
+  clientes: 'Clientes'
+  tecnologias: 'Tecnologias'
+  conozcanos: 'Conozcanos'
+  aliados: 'Aliados'
+  reconocimientos: 'Reconocimientos'
+  content: Content
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'

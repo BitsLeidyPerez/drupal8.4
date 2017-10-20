@@ -1,0 +1,22 @@
+
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+'block-' ~ plugin_id|clean_class,
+'clearfix',
+]
+%}
+<section{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+    <div class="divider-new pt-5">
+      <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s" >{{ label }}</h2>
+    </div>
+    {% endif %}
+    {{ title_suffix }}
+
+    {% block content %}
+        {{ content }}
+    {% endblock %}
+</section>

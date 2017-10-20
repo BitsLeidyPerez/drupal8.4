@@ -1,0 +1,112 @@
+<header>
+    <div class="header-content">
+
+        <nav id="main-menu" class="navbar navbar-expand-lg navbar-light fixed-top bg-faded">
+            <a class="navbar-brand" href="#">{{ page.header }}</a>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="nav-icon-desp" class="navbar-toggler-icon"></span>
+                <span id="nav-icon-cont"  class="close">X</span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse flex-row-reverse">
+
+              {{ page.main_menu }}
+
+            </div>
+        </nav>
+    </div>
+    <div id="slider">
+    {{ page.banner }}
+    </div>
+    <div id="nav-menu" class="nav-menu z-depth-1-half">
+
+    {{ page.nav_menu }}
+
+    </div>
+
+</header>
+
+<section>
+    {{ page.highlighted }}
+</section>
+<section>
+    {{ page.featured_top }}
+</section>
+<section>
+    {{ page.breadcrumb }}
+</section>
+
+
+<section id="nosotros" class="bloque_margen" style="height: 400px">{{ page.nosotros }} Nosotros</section>
+<section id="productos_servicios" style="height: 400px">{{ page.prod_serv }} Productos y servicios</section>
+<section id="clientes" class="bloque_margen"  style="height: 400px">{{ page.clientes }} Clientes</section>
+<section id="tecnologias" style="height: 400px">{{ page.tecnologias }} Tecnologias</section>
+<section id="conozcanos" class="bloque_margen"  style="height: 400px">{{ page.conozcanos }} Conozcanos</section>
+<section id="alianzas" style="height: 400px">{{ page.aliados }} Alianzas</section>
+<section id="reconocimientos" class="bloque_margen"  style="height: 400px">{{ page.reconocimientos }} Reconocimientos</section>
+
+<div class="container-fluid">
+    <main id="content" class="main-content" role="main">
+        <section class="section" id="section-content">
+            <a id="main-content" tabindex="-1"></a>
+            {{ page.content }}
+        </section>
+    </main>
+</div>
+
+{#
+footer class="footer-end">
+
+    <div class="foot">
+        {% if page.footer_first and page.footer_second and page.footer_third and page.footer_fourth %}
+            <div class="row" >
+                <div class="block-foot1 col-md-4" >{{ page.footer_first }}</div>
+                <div class="block-foot col-md-3" >{{ page.footer_second }}</div>
+                <div class="block-foot col-md-3" >{{ page.footer_third }}</div>
+                <div class="block-foot col-md-2 f-heigh " >{{ page.footer_fourth }}</div>
+            </div>
+        {% endif %}
+
+        <div class="foot_fifth">
+           {{ page.footer_fifth }}
+        </div>
+
+    </div>
+    <button id="myBtn" title="Go to top"><img src="/RepoBits/themes/custom/adf_bits/images/back_to_top.png"/></button>
+
+</footer>
+#}
+
+
+
+<footer class="page-footer center-on-small-only stylish-color-dark" style="clear: both !important;">
+    <div class="container-fluid">
+        <div class="row">
+
+          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+
+              <!--First column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_first }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Second column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_second }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Third column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_third }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Fourth column-->
+              <div class="col-lg-3 col-md-6 ml-auto">{{ page.footer_fourth }}</div>
+              <hr class="w-100 clearfix d-sm-none">
+
+          {% endif %}
+        </div>
+    </div>
+    <hr>
+
+    <div class="footer-copyright">
+        <div class="container-fluid">
+          {{ page.footer_fifth }}
+        </div>
+    </div>
+    <button id="myBtn" title="Go to top"><img src="/RepoBits/themes/custom/adf_bits/images/back_to_top.png"/></button>
+
+</footer>

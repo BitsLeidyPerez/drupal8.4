@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5{
+    color: #002b49 !important;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em !important;
+    font-family:"open_sanslight" !important;
+}
+h2 a{
+     color: #002b49 !important;
+     text-transform: uppercase;
+     font-size: 1.7em ;
+     font-family: "open_sans_condensedlight" !important;
+
+ }
+.main-content h2 {
+    margin-bottom: 2px !important;
+    font-size: 1.7em !important;
+    line-height: 1.5 !important;
+    font-family: open_sans_condensedlight !important;
+}
+h5{font-size: 50px;
+    font-family: "open_sansregular" !important;
+}
+h3{
+    font-size: 1.3em !important;
+    text-align: center;
+    ont-family: "open_sans_condensedlight" !important;
+}
+.footer-end h2{
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-weight: bold;
+}
+.block-foot1 h5{
+    color: #ffffff !important;
+    font-size: 11px !important;
+}
+h6{
+    font-size: 0.8rem !important;
+    font-style: normal !important;
+    color: #bfcad1 !important;
+}
+body{
+    font-family: "open_sansregular" ;
+}
+h5{font-size: 50px;
+    font-family: "open_sansregular" !important;
+}

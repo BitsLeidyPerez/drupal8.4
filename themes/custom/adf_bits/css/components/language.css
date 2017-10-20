@@ -1,0 +1,43 @@
+.form-item-lang-dropdown-select {
+    display: inline;
+}
+
+/*.lang-dropdown-form img.language-icon {*/
+/*padding: 0 4px;*/
+/*}*/
+.block-lang-dropdown{
+    background-color: rgba(91, 121, 168, 0.8);
+    padding-right: 0.5em;
+    float: right;
+    min-width: 4em;
+    margin: 1.3em -1em 0 1em;
+    /*min-height: 2em;*/
+}
+.lang-dropdown-select-element {
+    background-image: url("/themes/custom/adf_bits/images/openLang.png") !important; /*aquí deberás escribir la ruta de la imagen que utilizarás como flecha del desplegable*/
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: transparent !important;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    border: none !important;
+    height: 2em !important;
+    padding: 0.01rem 0.01rem !important;
+}
+.lang-dropdown-select-element option{
+    text-transform: uppercase;
+    color:  rgb(91, 121, 168) ;
+    background-color: #ffffff;
+    border: 1px solid  rgba(91, 121, 168, 0.8) ;
+}
+.lang-dropdown-select-element option:hover{
+    text-transform: uppercase;
+    color:  #ffffff ;
+    background-color: rgba(91, 121, 168, 0.8) !important;
+    border: 1px solid  rgba(91, 121, 168, 0.8) ;
+}
+

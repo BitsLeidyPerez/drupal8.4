@@ -1,0 +1,12 @@
+base_style:
+  version: 1.x
+  css:
+    base:
+      css/base/style.css: {}
+      css/custom.css: {}
+      css/animate.css: {}
+    components:
+      css/components/font.css: {}
+      css/components/language.css: {}
+  js:
+    js/menu.js: {}

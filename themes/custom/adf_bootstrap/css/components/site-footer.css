@@ -1,0 +1,26 @@
+.site-footer{
+    /*min-height: 5em;*/
+    width: 100%;
+    box-shadow: -2px -1px 6px 0px #ccc;
+    margin-top: 2em;
+
+}
+.layout-container .footer-block{
+    background-color: #f7f7f7;
+}
+.footer-block{
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+
+}
+.footer-block div{
+    padding-left: 1em !important;
+}
+.footer_fifth{
+    clear: both;
+    height: 2em;
+    background:#83cc24 ;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}

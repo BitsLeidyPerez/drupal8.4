@@ -1,0 +1,72 @@
+{% import _self as menus %}
+
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+<ul  {{ attributes.addClass('menu', 'navbar-nav') }}>
+    {% else %}
+    <ul{{ attributes.addClass('dropdown-menu') }}>
+        {% endif %}
+        {% for item in items %}
+            {%
+            set item_classes = [
+            'nav-item',
+            item.is_expanded? 'expanded',
+            item.is_expanded and menu_level == 0 ? 'dropdown',
+            item.in_active_trail ? 'active',
+            ]
+            %}
+            {% if menu_level == 0 and item.is_expanded %}
+            <li{{ item.attributes.addClass(item_classes) }}>
+                <a href="{{ item.url }}" class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }} <span class="caret" ></span></a>
+            {% else %}
+                <li {{ item.attributes.addClass(item_classes) }}>
+                <a href="{{ item.url }}" id="a-menu">{{ item.title }} </a>
+
+              {#{ link(item.title, item.url) }#}
+            {% endif %}
+            {% if item.below %}
+                {{ menus.menu_links(item.below, attributes.removeClass('navbar-nav'), menu_level + 1) }}
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+
+
+
+{#{{ menus.menu_links(items, attributes, 0) }}#}
+
+{#{% macro menu_links(items, attributes, menu_level) %}#}
+  {#{% import _self as menus %}#}
+  {#{% if items %}#}
+    {#{% if menu_level == 0 %}#}
+      {#<ul{{ attributes.addClass('menu') }}>#}
+    {#{% else %}#}
+      {#<ul class="menu">#}
+    {#{% endif %}#}
+    {#{% for item in items %}#}
+      {#{%#}
+        {#set classes = [#}
+          {#'menu-item',#}
+          {#item.is_expanded ? 'menu-item--expanded',#}
+          {#item.is_collapsed ? 'menu-item--collapsed',#}
+          {#item.in_active_trail ? 'menu-item--active-trail',#}
+        {#]#}
+      {#%}#}
+      {#<li{{ item.attributes.addClass(classes) }}>#}
+        {#{{ link(item.title, item.url) }}#}
+        {#{% if item.below %}#}
+          {#{{ menus.menu_links(item.below, attributes, menu_level + 1) }}#}
+        {#{% endif %}#}
+      {#</li>#}
+    {#{% endfor %}#}
+    {#</ul>#}
+  {#{% endif %}#}
+{#{% endmacro %}#}
