@@ -1,0 +1,60 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function adf_social_field_theme($existing, $type, $theme, $path) {
+  
+  return [
+    'share_social_networks_field' => [
+      'variables' =>  [
+        'social_networks' => null,
+          'email'=>null
+      ],
+      'template' => 'field--share_social_networks'
+    ],
+      'share_social_networks_footer' => [
+          'variables' =>  [
+              'social_networks' => null,
+              'email'=>null
+          ],
+          'template' => 'field--share_social_footer'
+      ],
+    'share_facebook' => [
+      'variables' =>  [
+        'url' => null
+      ],
+      'template' => 'share_facebook'
+    ],
+    'share_twitter' => [
+      'variables' =>  [
+        'url' => null
+      ],
+      'template' => 'share_twitter'
+    ],
+    'share_pinterest' => [
+      'variables' =>  [
+        'url' => null
+      ],
+      'template' => 'share_pinterest'
+    ],
+    'share_instagram' => [
+      'variables' =>  [
+        'url' => null
+      ],
+      'template' => 'share_instagram'
+    ],
+    'share_youtube' => [
+      'variables' =>  [
+        'url' => null
+      ],
+      'template' => 'share_youtube'
+    ],
+    'share_gplus' => array(
+      'variables' =>  array(
+        'url' => null
+      ),
+      'template' => 'share_gplus'
+    )
+
+  ];
+}

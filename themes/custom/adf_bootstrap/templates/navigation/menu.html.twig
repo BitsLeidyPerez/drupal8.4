@@ -25,7 +25,7 @@
                 <a href="{{ item.url }}" class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }} <span class="caret" ></span></a>
             {% else %}
                 <li {{ item.attributes.addClass(item_classes) }}>
-                <a href="{{ item.url }}" id="a-menu">{{ item.title }} </a>
+                <a href="{{ item.url }}" class="a-menu">{{ item.title }} </a>
 
               {#{ link(item.title, item.url) }#}
             {% endif %}

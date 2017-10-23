@@ -1,0 +1,7 @@
+adf_social_field.adf_social_field_settings_form:
+  title: 'Adf Social'
+  route_name: adf_social_field.adf_social_field_settings_form
+  description: 'Permite configurar las redes sociales para compartir'
+  parent: system.admin_config_system
+  weight: 99
+

@@ -1,0 +1,15 @@
+<div class="share_social_networks_field fixed-top {{ class }} hidden-sm-down" style="top: 10em; width: 3em" >
+<div class="fx_rs" style="background-color: #5877a8; width: 2.5em;  padding:0.2em 0 0.3em 0.5em">
+  {% for item in social_networks %}
+      <div class="rs_item social-network-share-button social-network-share-button-{{ loop.index }}" style="margin: 0.2em 0 0.4em 0">
+      {{ item }}
+    </div>
+
+  {% endfor %}
+</div>
+    <div class="email_fx" style="background-color: #83cc24;  width: 2.5em; padding:0.2em 0 0.5em 0.5em; margin-top: 2em">
+        <a href="mailto:{{ email }}">
+            <img src="/modules/custom/adf_social/image/email.png"/>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row redes">
+<div id="email-foot">
+   <div class="col-xs-3">
+      <img src="/modules/custom/adf_social/image/email.png">
+   </div>
+<div class="col-xs-9">
+       <a href="mailto:{{ email }}">{{ email }}</a>
+  </div>
+</div>
+<div id="redes-foot">
+   {% for item in social_networks %}
+       <div class=" col-xs-3 social-network-share-button social-network-share-button-{{ loop.index }}"   >
+           {{ item }}
+       </div>
+   {% endfor %}
+</div>
+</div>

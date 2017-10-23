@@ -36,13 +36,13 @@
 </section>
 
 
-<section id="nosotros" class="bloque_margen" style="height: 400px">{{ page.nosotros }} Nosotros</section>
-<section id="productos_servicios" style="height: 400px">{{ page.prod_serv }} Productos y servicios</section>
-<section id="clientes" class="bloque_margen"  style="height: 400px">{{ page.clientes }} Clientes</section>
-<section id="tecnologias" style="height: 400px">{{ page.tecnologias }} Tecnologias</section>
-<section id="conozcanos" class="bloque_margen"  style="height: 400px">{{ page.conozcanos }} Conozcanos</section>
-<section id="alianzas" style="height: 400px">{{ page.aliados }} Alianzas</section>
-<section id="reconocimientos" class="bloque_margen"  style="height: 400px">{{ page.reconocimientos }} Reconocimientos</section>
+<section id="nosotros" class="bloque_margen" >{{ page.nosotros }}</section>
+<section id="productos_servicios" >{{ page.prod_serv }}</section>
+<section id="clientes" class="bloque_margen"  >{{ page.clientes }}</section>
+<section id="tecnologias" >{{ page.tecnologias }} </section>
+<section id="conozcanos" class="bloque_margen">{{ page.conozcanos }}</section>
+<section id="alianzas" >{{ page.aliados }}</section>
+<section id="reconocimientos" class="bloque_margen"  >{{ page.reconocimientos }}</section>
 
 <div class="container-fluid">
     <main id="content" class="main-content" role="main">
@@ -52,29 +52,6 @@
         </section>
     </main>
 </div>
-
-{#
-footer class="footer-end">
-
-    <div class="foot">
-        {% if page.footer_first and page.footer_second and page.footer_third and page.footer_fourth %}
-            <div class="row" >
-                <div class="block-foot1 col-md-4" >{{ page.footer_first }}</div>
-                <div class="block-foot col-md-3" >{{ page.footer_second }}</div>
-                <div class="block-foot col-md-3" >{{ page.footer_third }}</div>
-                <div class="block-foot col-md-2 f-heigh " >{{ page.footer_fourth }}</div>
-            </div>
-        {% endif %}
-
-        <div class="foot_fifth">
-           {{ page.footer_fifth }}
-        </div>
-
-    </div>
-    <button id="myBtn" title="Go to top"><img src="/RepoBits/themes/custom/adf_bits/images/back_to_top.png"/></button>
-
-</footer>
-#}
 
 
 

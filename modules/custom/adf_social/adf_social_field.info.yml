@@ -1,0 +1,7 @@
+name: Adf Social Share
+type: module
+description: Este modulo provee el campo para nodos para permitir compartir en redes sociales
+core: 8.x
+package: Custom
+libraries:
+  - adf_social_field/adf_social

@@ -1,0 +1,21 @@
+# Bits alianzas routing definition
+bits_alianzas.settings_tab:
+  route_name: bits_alianzas.settings
+  title: 'Settings'
+  base_route: bits_alianzas.settings
+entity.bits_alianzas.canonical:
+  route_name: entity.bits_alianzas.canonical
+  base_route: entity.bits_alianzas.canonical
+  title: 'View'
+
+entity.bits_alianzas.edit_form:
+  route_name: entity.bits_alianzas.edit_form
+  base_route: entity.bits_alianzas.canonical
+  title: Edit
+
+entity.bits_alianzas.delete_form:
+  route_name:  entity.bits_alianzas.delete_form
+  base_route:  entity.bits_alianzas.canonical
+  title: Delete
+  weight: 10
+

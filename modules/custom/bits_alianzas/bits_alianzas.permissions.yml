@@ -1,0 +1,19 @@
+add bits alianzas entities:
+  title: 'Create new Bits alianzas entities'
+
+administer bits alianzas entities:
+  title: 'Administer Bits alianzas entities'
+  description: 'Allow to access the administration form to configure Bits alianzas entities.'
+  restrict access: true
+
+delete bits alianzas entities:
+  title: 'Delete Bits alianzas entities'
+
+edit bits alianzas entities:
+  title: 'Edit Bits alianzas entities'
+
+view published bits alianzas entities:
+  title: 'View published Bits alianzas entities'
+
+view unpublished bits alianzas entities:
+  title: 'View unpublished Bits alianzas entities'

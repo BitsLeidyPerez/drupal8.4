@@ -1,0 +1,5 @@
+entity.bits_alianzas.add_form:
+  route_name: entity.bits_alianzas.add_form
+  title: 'Add Bits alianzas'
+  appears_on:
+    - entity.bits_alianzas.collection

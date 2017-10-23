@@ -1,0 +1,11 @@
+adf_social:
+  version: 1.x
+  css:
+    base:
+     css/social_style.css: {weight: -3}
+  js:
+    js/adf_social.js: {weight: 0}
+
+  dependencies:
+      - core/jquery
+

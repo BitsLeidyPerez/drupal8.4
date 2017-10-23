@@ -1,0 +1,30 @@
+services:
+  adf_social_field.render:
+    class: Drupal\adf_social_field\RenderService
+    arguments: []
+    tags:
+      - { name: service_collector, tag: social_media_share_button, call: addSocialMedia }
+  facebook_share_button:
+    class: Drupal\adf_social_field\Sharebutton\FacebookShareButton
+    tags:
+      - { name: social_media_share_button }
+  twitter_share_button:
+    class: Drupal\adf_social_field\Sharebutton\TwitterShareButton
+    tags:
+      - { name: social_media_share_button }
+  pinterest_share_button:
+    class: Drupal\adf_social_field\Sharebutton\PinterestShareButton
+    tags:
+      - { name: social_media_share_button }
+  google_share_button:
+    class: Drupal\adf_social_field\Sharebutton\GoogleShareButton
+    tags:
+      - { name: social_media_share_button }
+  youtube_share_button:
+    class: Drupal\adf_social_field\Sharebutton\YoutubeButton
+    tags:
+        - { name: social_media_share_button }
+  instagram_share_button:
+    class: Drupal\adf_social_field\Sharebutton\InstagramShareButton
+    tags:
+        - { name: social_media_share_button }

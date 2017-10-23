@@ -1,0 +1,14 @@
+# Bits alianzas menu items definition
+entity.bits_alianzas.collection:
+  title: 'Bits alianzas list'
+  route_name: entity.bits_alianzas.collection
+  description: 'List Bits alianzas entities'
+  parent: system.admin_structure
+  weight: 100
+
+bits_alianzas.admin.structure.settings:
+  title: Bits alianzas settings
+  description: 'Configure Bits alianzas entities'
+  route_name: bits_alianzas.settings
+  parent: system.admin_structure
+

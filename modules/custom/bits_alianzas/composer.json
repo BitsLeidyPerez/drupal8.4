@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bits_alianzas",
+  "type": "drupal-module",
+  "description": "Muestra las alianzas de negocios de Bits",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bits_alianzas",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/bits_alianzas",
+    "source": "http://cgit.drupalcode.org/bits_alianzas"
+  },
+  "require": { }
+}

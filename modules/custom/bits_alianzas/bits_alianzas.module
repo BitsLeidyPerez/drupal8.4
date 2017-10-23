@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains bits_alianzas.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bits_alianzas_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bits_alianzas module.
+    case 'help.page.bits_alianzas':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Muestra las alianzas de negocios de Bits') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+///**
+// * Theme for the block
+// */
+//function bits_alianzas_theme($existing, $type, $theme, $path) {
+//
+//    return array('bits_alianzas' =>
+//        array(
+//                'variables' => array(
+//                'titulo' => 'Título por defecto',
+//                'descripcion' => 'descripción por defecto'
+//            ),
+//            'template' => 'bits_alianzas'
+//        ));
+//}

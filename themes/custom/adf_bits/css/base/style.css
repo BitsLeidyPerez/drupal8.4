@@ -143,12 +143,6 @@ button:focus{
 }
 
 
-
-
-
-
-
-
 /*Boton ir a inicio*/
 .back-to-top{
 border: none !important;
@@ -338,7 +332,9 @@ max-height: 50px !important;
     .navbar-nav{
         -webkit-flex-direction: column !important;
     }
-
+    .a-menu{
+    color: #777777 !important;
+    }
     #navbarNavDropdown span{
         width: 30px !important;
         height: 20px !important;
@@ -425,9 +421,7 @@ max-height: 50px !important;
         height: 2.5em !important;
         line-height: 2.3;
     }
-    .a-color {
-        color: #6b6c6d !important;
-    }
+
     .region-header {
         padding: 0.357em 15px 0;
         margin-left: -100px;
